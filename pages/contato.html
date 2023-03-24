@@ -40,11 +40,12 @@
             <div class="form-wrapper">
                 <h3>ENTRE EM CONTATO</h3>
 
-                <form action="">
-                    <input type="text" placeholder="Nome:">
-                    <input type="email" placeholder="Email:">
+                <form onsubmit="event.preventDefault()">
+                    <input type="text" placeholder="Nome:" required>
+                    <input type="email" placeholder="Email:" required>
+                    <input type="tel" placeholder="Telefone:" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
                     <textarea cols="30" rows="10" placeholder="Mensagem:"></textarea> 
-                    <button>ENVIAR</button>
+                    <button onclick="enviarParaWhatsApp()">ENVIAR</button>
                 </form>  
 
                 <div class="social-links">
@@ -84,6 +85,8 @@
                 © Copyright 2002-2023 Copyright.com.br - All Rights Reserved
             </div>
         </footer>
+
+        <script src="../scripts/script.js"></script>
     </body>
 </html>
 

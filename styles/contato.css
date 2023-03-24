@@ -104,6 +104,10 @@ main .form-wrapper form textarea {
   width: 100%;
 }
 
+main .form-wrapper form input:invalid {
+  border-color: red;
+}
+
 main .form-wrapper form button {
   padding: 1rem;
   border-radius: 1rem;
